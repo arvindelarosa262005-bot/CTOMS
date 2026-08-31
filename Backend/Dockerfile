@@ -1,14 +1,8 @@
 ﻿# Build stage
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0.400 AS build
 WORKDIR /src
 
-COPY API/CTOMS.Api.csproj API/
-COPY Application/CTOMS.Application.csproj Application/
-COPY Domain/CTOMS.Domain.csproj Domain/
-COPY Infrastructure/CTOMS.Infrastructure.csproj Infrastructure/
-RUN dotnet restore API/CTOMS.Api.csproj
-
-COPY . .
+COPY API/ .
 RUN dotnet publish API/CTOMS.Api.csproj -c Release -o /app/publish
 
 # Runtime stage
