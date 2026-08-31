@@ -1,0 +1,28 @@
+﻿# Node / Vite (Admin-Web)
+node_modules/
+dist/
+*.local
+.cache/
+
+# .NET (Backend)
+**/bin/
+**/obj/
+*.user
+
+# Vite dev server only — NEVER commit HTTPS certs
+ctoms.key
+ctoms.crt
+ctoms.pfx
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+tsconfig.tsbuildinfo

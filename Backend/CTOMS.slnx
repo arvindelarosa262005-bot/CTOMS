@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/API/">
+    <Project Path="API/CTOMS.Api.csproj" />
+  </Folder>
+  <Folder Name="/Application/">
+    <Project Path="Application/CTOMS.Application.csproj" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="Domain/CTOMS.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Infrastructure/CTOMS.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/CTOMS.Tests.csproj" />
+  </Folder>
+</Solution>
