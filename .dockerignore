@@ -1,0 +1,9 @@
+﻿**/bin/
+**/obj/
+Admin-Web/node_modules/
+Admin-Web/dist/
+.git/
+**/*.user
+**/*.pfx
+**/*.key
+**/*.crt
