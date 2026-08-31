@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0.400 AS build
 WORKDIR /src
 
 COPY Backend/ .
-RUN dotnet publish Backend/API/CTOMS.Api.csproj -c Release -o /app/publish
+RUN dotnet publish API/CTOMS.Api.csproj -c Release -o /app/publish
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final

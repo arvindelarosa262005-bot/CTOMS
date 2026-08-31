@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:10.0.400 AS build
 WORKDIR /src
 
-COPY API/ .
+COPY . .
 RUN dotnet publish API/CTOMS.Api.csproj -c Release -o /app/publish
 
 # Runtime stage
